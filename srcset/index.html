@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Srcset: Responsive Image</title>
+  <meta name="viewport" content="width=device-width, initial-width=1">
+  <style media="screen">
+    img {
+      width: auto;
+      max-width: 100%;
+    }
+  </style>
+</head>
+  <body>
+    <h1>srcset: Responsive Image</h1>
+    <img srcset="water-small.jpg 600w,
+             water-medium.jpg 1000w,
+             water-large.jpg 2560w"
+     sizes="(max-width: 600px) 580px,
+            (max-width: 1100px) 940px,
+            2560px"
+     src="water-medium.jpg" alt="Elva dressed as a fairy">
+  </body>
+</html>
